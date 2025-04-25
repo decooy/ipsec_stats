@@ -3,6 +3,10 @@ import subprocess
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return ''
+
 @app.route('/connected')
 def get_ipsec_connections():
     try:
